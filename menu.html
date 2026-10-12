@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Меню — Mattarello</title>
+  <meta name="description" content="Меню Mattarello: свежая паста, антипасти, десерты, вино по бокалам и аперитиво. Средний чек до 1500 ₽.">
+  <meta name="theme-color" content="#170B0C">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Manrope:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+
+  <header class="site-header site-header--solid">
+    <a class="brand-word" href="index.html">Mattarello</a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="menu.html" aria-current="page">Меню</a>
+      <a href="index.html#wine">Вино дня</a>
+      <a href="index.html#events">Вечера</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn--ghost-light btn--small header-cta" href="index.html#booking">Забронировать</a>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav" data-nav-open>
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 6h14M2 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+    </button>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <div class="mobile-nav__top">
+      <span class="brand-word">Mattarello</span>
+      <button class="burger" type="button" aria-label="Закрыть меню" data-nav-close>
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav__links">
+      <li><a href="index.html">Главная <span>01</span></a></li>
+      <li><a href="index.html#wine">Вино дня <span>02</span></a></li>
+      <li><a href="index.html#events">Вечера <span>03</span></a></li>
+      <li><a href="#contacts" data-nav-close>Контакты <span>04</span></a></li>
+    </ul>
+    <a class="btn btn--light" href="index.html#booking">Забронировать стол</a>
+    <div class="mobile-nav__meta">
+      <span>Малая Бронная, 14 · м. Пушкинская</span>
+      <span>Ежедневно 12:00–00:00</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="menu-hero" aria-labelledby="menu-title">
+      <div class="container menu-hero__inner">
+        <div>
+          <span class="overline overline--rule">Il menù</span>
+          <h1 id="menu-title">Меню</h1>
+        </div>
+        <p>Пасту раскатываем каждое утро, меню меняем по сезону. Средний чек — до 1500 ₽. Об аллергенах спросите официанта.</p>
+      </div>
+    </section>
+
+    <div class="on-light">
+      <div class="menu-tabs" role="tablist" aria-label="Разделы меню" data-menu-tabs></div>
+
+      <div class="container menu-layout">
+        <aside class="menu-side" aria-label="Навигация по меню">
+          <div class="side-tabs" role="tablist" aria-label="Разделы меню" data-side-tabs></div>
+          <button class="veg-toggle" type="button" aria-pressed="false" data-veg>
+            <span class="veg-toggle__box" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2.5 6.2l2.2 2.2 4.8-5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Только вегетарианское
+          </button>
+          <a class="wine-teaser" href="index.html#wine">
+            <img src="assets/img/wine-of-the-day.jpg" alt="" loading="lazy">
+            <span class="wine-teaser__body">
+              <span class="overline">Сегодня</span>
+              <span class="wine-teaser__name">vino del giorno</span>
+              <span class="wine-teaser__meta">Rosso di Montalcino · 390 ₽ за бокал</span>
+            </span>
+          </a>
+        </aside>
+
+        <div class="menu-main" id="menu-panel" role="tabpanel" aria-live="polite">
+          <button class="veg-toggle" type="button" aria-pressed="false" data-veg>
+            <span class="veg-toggle__box" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2.5 6.2l2.2 2.2 4.8-5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Только вегетарианское
+          </button>
+          <div class="cat-head">
+            <div>
+              <p class="cat-head__it" data-cat="it"></p>
+              <h2 data-cat="ru"></h2>
+            </div>
+            <p data-cat="note"></p>
+          </div>
+          <div class="dish-grid dish-grid--photos" data-dishes-photo></div>
+          <div class="dish-grid dish-grid--list" data-dishes-list></div>
+          <p class="empty" data-empty hidden>В этом разделе нет вегетарианских позиций. Загляните в «Пасту» или «Антипасти».</p>
+          <a class="wine-teaser" href="index.html#wine">
+            <img src="assets/img/wine-of-the-day.jpg" alt="" loading="lazy">
+            <span class="wine-teaser__body">
+              <span class="overline">Сегодня</span>
+              <span class="wine-teaser__name">vino del giorno</span>
+              <span class="wine-teaser__meta">Rosso di Montalcino · 390 ₽ за бокал</span>
+            </span>
+          </a>
+          <noscript><p class="empty">Чтобы увидеть меню, включите JavaScript.</p></noscript>
+        </div>
+      </div>
+    </div>
+
+    <section class="menu-cta" aria-labelledby="cta-title">
+      <div class="container menu-cta__inner">
+        <h2 class="h2" id="cta-title">Выбрали? Займём вам стол</h2>
+        <a class="btn btn--light" href="index.html#booking">Забронировать стол</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__top">
+        <span class="footer__word">Mattarello</span>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <span class="overline">Адрес</span>
+            <span>Малая Бронная, 14, Москва<br>м. Пушкинская</span>
+          </div>
+          <div class="footer__col">
+            <span class="overline">Часы</span>
+            <span>Ежедневно 12:00–00:00<br>пт–сб до 01:00</span>
+          </div>
+          <div class="footer__col">
+            <span class="overline">Связь</span>
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <span class="footer__social"><a href="#">Telegram</a><a href="#">ВКонтакте</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>Концепт для портфолио. Mattarello — вымышленное заведение, фото сгенерированы ИИ.</span>
+        <a href="#main">Наверх ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

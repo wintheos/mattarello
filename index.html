@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mattarello — свежая паста и вино дня, Москва</title>
+  <meta name="description" content="Mattarello — современное итальянское гастро-бистро на Малой Бронной: свежая паста, которую раскатывают при вас, и вино дня по бокалам. Концепт для портфолио.">
+  <meta name="theme-color" content="#170B0C">
+  <meta property="og:title" content="Mattarello — свежая паста и вино дня">
+  <meta property="og:description" content="Днём — паста. Вечером — vino. Итальянское гастро-бистро в Москве.">
+  <meta property="og:image" content="assets/img/hero-desktop.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Manrope:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+
+  <header class="site-header">
+    <a class="brand-mini" href="#top">Паста · Вино · Москва</a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="menu.html">Меню</a>
+      <a href="#wine">Вино дня</a>
+      <a href="#events">Вечера</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn--ghost-light btn--small header-cta" href="#booking">Забронировать</a>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav" data-nav-open>
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 6h14M2 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+    </button>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <div class="mobile-nav__top">
+      <span class="brand-word">Mattarello</span>
+      <button class="burger" type="button" aria-label="Закрыть меню" data-nav-close>
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav__links">
+      <li><a href="menu.html">Меню <span>01</span></a></li>
+      <li><a href="#wine" data-nav-close>Вино дня <span>02</span></a></li>
+      <li><a href="#events" data-nav-close>Вечера <span>03</span></a></li>
+      <li><a href="#contacts" data-nav-close>Контакты <span>04</span></a></li>
+    </ul>
+    <a class="btn btn--light" href="#booking" data-nav-close>Забронировать стол</a>
+    <div class="mobile-nav__meta">
+      <span>Малая Бронная, 14 · м. Пушкинская</span>
+      <span>Ежедневно 12:00–00:00</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- 01 Первый экран -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <picture class="hero__media">
+        <source media="(min-width: 900px)" srcset="assets/img/hero-desktop.jpg">
+        <img src="assets/img/hero-mobile.jpg" alt="Паппарделле с рагу в кремовой миске и бокал красного вина на бордовом каменном столе" fetchpriority="high">
+      </picture>
+      <div class="hero__content">
+        <span class="overline overline--rule">Gastro bistro</span>
+        <h1 class="hero__title" id="hero-title">Mattarello</h1>
+        <div class="hero__bottom">
+          <p class="hero__lead">Свежая паста и <span class="it">vino del giorno</span> по бокалам. Днём — светлый зал, вечером — винный бар до полуночи.</p>
+          <div class="hero__actions">
+            <a class="btn btn--light" href="#booking">Забронировать</a>
+            <a class="btn btn--ghost-light" href="menu.html">Меню</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 Концепция -->
+    <section class="section on-light concept" aria-labelledby="concept-title">
+      <div class="container split">
+        <div class="concept__title section-head reveal">
+          <span class="overline"><span class="overline__num">02</span> — Концепция</span>
+          <h2 class="h2" id="concept-title" style="font-size: clamp(44px, 6vw, 88px); line-height: .95;">Днём — паста.<br>Вечером — <em class="it">vino</em>.</h2>
+        </div>
+        <div class="concept__body reveal">
+          <p class="lead muted">Тесто замешиваем каждое утро и раскатываем у стойки — паста оказывается в тарелке через десять минут после того, как стала лентой. Ближе к вечеру приглушаем свет и открываем новые бутылки.</p>
+          <div class="rows">
+            <div class="row"><span class="row__name">giorno</span><span class="row__meta">Паста дня и ланч · 12:00–17:00</span></div>
+            <div class="row"><span class="row__name">sera</span><span class="row__meta">Винный бар и шеринг · 17:00–00:00</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Вино дня -->
+    <section class="wine" id="wine" aria-labelledby="wine-title">
+      <div class="wine__media">
+        <img src="assets/img/wine-of-the-day.jpg" alt="Красное вино льётся в бокал на мраморной подставке" loading="lazy">
+      </div>
+      <div class="wine__body reveal">
+        <span class="overline"><span class="overline__num">03</span> — Вино дня</span>
+        <p class="wine__kicker it">vino del giorno</p>
+        <h2 class="h2" id="wine-title">Rosso di Montalcino</h2>
+        <p class="lead muted" style="max-width: 460px;">Тоскана · санджовезе. Каждый день сомелье открывает новую бутылку и подсказывает, к какой пасте её взять. Закончилась — открываем следующую.</p>
+        <div class="price-line">
+          <span class="muted" style="font-size: 14px;">Бокал 150 мл</span>
+          <span class="price-line__value">390 ₽</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Паста и пара -->
+    <section class="section on-light" id="pairing" aria-labelledby="pair-title">
+      <div class="container split">
+        <div class="pair__intro reveal">
+          <div class="section-head">
+            <span class="overline"><span class="overline__num">04</span> — Паста и пара</span>
+            <h2 class="h2" id="pair-title">Выберите пасту — подберём бокал</h2>
+          </div>
+          <div class="chips" role="group" aria-label="Выбор пасты" data-pair-chips></div>
+          <a class="btn btn--ghost-dark" href="menu.html" style="align-self: flex-start;">Всё меню</a>
+        </div>
+        <div class="pair__card" aria-live="polite">
+          <img class="pair__photo" data-pair="img" src="assets/img/pasta-tagliatelle.jpg" alt="Тальятелле с рагу в кремовой миске">
+          <div class="pair__dish">
+            <div class="pair__line">
+              <h3 class="pair__name" data-pair="name">Tagliatelle al ragù</h3>
+              <span class="pair__price" data-pair="price">790 ₽</span>
+            </div>
+            <p class="pair__desc" data-pair="desc">Тальятелле с говяжьим рагу, томлённым 6 часов, и пармезаном</p>
+          </div>
+          <div class="pair__wine">
+            <span class="overline">Пара к пасте</span>
+            <div class="pair__line">
+              <span class="pair__wine-name" data-pair="wine">Санджовезе, Тоскана</span>
+              <span class="pair__wine-price" data-pair="wPrice">450 ₽</span>
+            </div>
+            <span class="pair__wine-why" data-pair="why">Кислотность вина освежает насыщенное рагу</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 Афиша -->
+    <section class="section" id="events" aria-labelledby="events-title">
+      <div class="container">
+        <div class="events__head reveal">
+          <div class="section-head">
+            <span class="overline"><span class="overline__num">05</span> — Афиша</span>
+            <h2 class="h2" id="events-title">Винные вечера</h2>
+          </div>
+          <p class="muted">Дегустации, гости из винодельческих регионов и аперитиво по пятницам. Места ограничены — бронируйте заранее.</p>
+        </div>
+        <div class="events__grid">
+          <article class="event reveal">
+            <span class="event__date">17<small>окт</small></span>
+            <h3>Натуральные вина</h3>
+            <p>Пять бокалов без добавок и закуски к каждому. 19:30 · 2900 ₽</p>
+            <a href="#booking">Записаться →</a>
+          </article>
+          <article class="event reveal">
+            <span class="event__date">24<small>окт</small></span>
+            <h3>Сицилия в бокале</h3>
+            <p>Вина острова и паста с сардинами и фенхелем. 19:30 · 3200 ₽</p>
+            <a href="#booking">Записаться →</a>
+          </article>
+          <article class="event reveal">
+            <span class="event__date">пт<small>18:00</small></span>
+            <h3><span class="it">Aperitivo</span> по пятницам</h3>
+            <p>18:00–20:00. Бокал и брускетта за 450 ₽, без брони.</p>
+            <a href="#contacts">Как добраться →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Бронирование -->
+    <section class="booking" id="booking" aria-labelledby="booking-title">
+      <div class="booking__media">
+        <img src="assets/img/evening.jpg" alt="Компания друзей поднимает бокалы красного вина в современном винном баре" loading="lazy">
+      </div>
+      <form class="booking__form" data-booking novalidate>
+        <div class="section-head">
+          <span class="overline"><span class="overline__num">06</span> — Бронирование</span>
+          <h2 class="h2" id="booking-title">Стол на вечер</h2>
+        </div>
+        <div class="fields">
+          <label class="field field--wide">Имя
+            <input type="text" name="name" autocomplete="given-name" placeholder="Как к вам обращаться" required>
+          </label>
+          <label class="field field--wide">Телефон
+            <input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required>
+          </label>
+          <label class="field">Дата
+            <input type="date" name="date" required>
+          </label>
+          <label class="field">Время
+            <input type="time" name="time" min="12:00" max="23:00" step="900" value="19:30" required>
+          </label>
+        </div>
+        <fieldset class="guests">
+          <legend>Гостей</legend>
+          <div class="guests__row" data-guests>
+            <button class="guest" type="button" aria-pressed="false" data-value="1">1</button>
+            <button class="guest" type="button" aria-pressed="true" data-value="2">2</button>
+            <button class="guest" type="button" aria-pressed="false" data-value="3">3</button>
+            <button class="guest" type="button" aria-pressed="false" data-value="4">4</button>
+            <button class="guest" type="button" aria-pressed="false" data-value="5+">5+</button>
+          </div>
+        </fieldset>
+        <div class="booking__submit">
+          <button class="btn btn--light" type="submit">Забронировать стол</button>
+          <p class="booking__note">Перезвоним за 15 минут. Компании от 8 человек — по телефону.</p>
+        </div>
+        <div class="booking__done" data-booking-done hidden tabindex="-1">
+          <h3>Grazie! Заявка принята</h3>
+          <p data-booking-summary></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__top">
+        <span class="footer__word">Mattarello</span>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <span class="overline">Адрес</span>
+            <span>Малая Бронная, 14, Москва<br>м. Пушкинская</span>
+          </div>
+          <div class="footer__col">
+            <span class="overline">Часы</span>
+            <span>Ежедневно 12:00–00:00<br>пт–сб до 01:00</span>
+          </div>
+          <div class="footer__col">
+            <span class="overline">Связь</span>
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <span class="footer__social"><a href="#">Telegram</a><a href="#">ВКонтакте</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>Концепт для портфолио. Mattarello — вымышленное заведение, фото сгенерированы ИИ.</span>
+        <a href="#top">Наверх ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
