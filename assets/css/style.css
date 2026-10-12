@@ -32,6 +32,8 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+/* Страница не должна сдвигаться вбок на телефоне. clip, а не hidden, чтобы не ломать sticky-вкладки меню. */
+html, body { overflow-x: clip; overscroll-behavior-x: none; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body {
@@ -348,6 +350,7 @@ body.nav-open { overflow: hidden; }
 
 .menu-hero { background: var(--noir); padding: 56px var(--gutter) 64px; }
 .menu-hero__inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; }
+.menu-hero__inner > * { min-width: 0; max-width: 100%; }
 .menu-hero h1 { margin: 16px 0 0; font-family: var(--font-display); font-weight: 500; font-size: clamp(72px, 10vw, 144px); line-height: .88; letter-spacing: -.02em; }
 .menu-hero .overline--rule { width: 320px; max-width: 100%; }
 .menu-hero p { margin: 0; max-width: 400px; color: var(--cream-muted); }
